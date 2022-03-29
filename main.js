@@ -30,6 +30,6 @@ app.use(express.static(path.join(__dirname,'public')));
             })                                                                                                                                                                              
         });                      
 
-server.listen(3001,(error)=>{
+server.listen(process.env.PORT || 5000,(error)=>{
     console.log("socket connectado");
 })
